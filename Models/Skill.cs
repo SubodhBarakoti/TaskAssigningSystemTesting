@@ -1,4 +1,6 @@
-﻿namespace TaskAssigningSystem.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TaskAssigningSystem.Models
 {
     public class Skill
     {
