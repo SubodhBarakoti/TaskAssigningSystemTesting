@@ -14,6 +14,12 @@ namespace TaskAssigningSystem.Models
         public string? EmployeeName { get; set; }
 
         [Required]
+        [DisplayName("Employee Name")]
+        [StringLength(10, ErrorMessage = "Contact should be of 10 characters.")]
+        [DataType(DataType.PhoneNumber)]
+        public string? EmployeeContact { get; set; }
+
+        [Required]
         [DisplayName("Employee Email")]
         public string? EmployeeEmail { get; set; }
 

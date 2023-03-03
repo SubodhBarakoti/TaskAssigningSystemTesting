@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace TaskAssigningSystem.Models
 {
@@ -9,6 +10,7 @@ namespace TaskAssigningSystem.Models
         
 
         [Required]
+        [DisplayName("Designation Name")]
         [MaxLength(30,ErrorMessage ="Designation Name must be atmost 30 character.")]
         public string? DesignationName { get; set; }
 

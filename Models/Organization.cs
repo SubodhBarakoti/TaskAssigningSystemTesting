@@ -22,7 +22,7 @@ namespace TaskAssigningSystem.Models
         [DataType(DataType.EmailAddress)]
         public string? OrganizationEmail { get; set; }
 
-        [DisplayName("Password")]
+        [DisplayName("Organization Password")]
         [Required]
         [MaxLength(16, ErrorMessage = "Password should have at most 16 characters.")]
         [MinLength(5, ErrorMessage = "Password should have at least 5 characters.")]
