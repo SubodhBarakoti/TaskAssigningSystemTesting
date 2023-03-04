@@ -31,6 +31,15 @@ namespace TaskAssigningSystem.Models
         public string? EmployeePassword { get; set; }
 
         [Required]
-        public string? EmployeeDesignation { get; set; }
+        [DisplayName("Skills")]
+        public Designation? EmployeeDesignation { get; set; }
+
+        [Required]
+        [DisplayName("Skills")]
+        public List<Skill>? Skills { get; set; }
+
+
+        [DisplayName("Project Worked On")]
+        public List<Project>? Projects { get; set; }
     }
 }
